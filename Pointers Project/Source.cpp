@@ -36,7 +36,7 @@ void TriviaProtocol()
 	int UserChoice;
 
 	SetConsoleTextAttribute(hConsole, 10);
-	Type("Welcome to the Trivia Protocol! "); Type("I'm your host,"); SetConsoleTextAttribute(hConsole, 14); Type("Jerry!");
+	Type("Welcome to the Trivia Protocol! "); Type("I'm your host,"); SetConsoleTextAttribute(hConsole, 14); Type("Jerry!\n");
 	Type("Please give a huge round of applause for our guest,"); SetConsoleTextAttribute(hConsole, 12); Type(" ERROR !\n"); SetConsoleTextAttribute(hConsole, 11);
 	Type("Okay."); Type("ERROR , are you ready for your first question?"); Type("Well, here it is!!!\n");
 	Type("What year was the Earth completely obliterated?\n");
