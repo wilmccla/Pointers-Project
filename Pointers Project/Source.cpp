@@ -27,9 +27,9 @@ int main()
 void Welcome() // Welcoming the player
 {
 	Type("Booting DataPad"); cout << "."; Sleep(800); cout << "."; Sleep(800); cout << ".\n"; Sleep(800);
-	Type("Congratulations explorer, you have found the DataPad of the famous explorer John Smith.\n");
-	Type("As a safety protocol, John installed a small trivia test to inhibit unintellectual individuals from getting his lost lost treasure.\n");
-	Type("But don't worry, I'm sure you're very intellectual!\n");
+	Type("Congratulations explorer,"); Type(" you have found the DataPad of the famous explorer John Smith.\n");
+	Type("As a safety protocol,"); Type(" John installed a small trivia test to inhibit unintellectual individuals from getting his lost lost treasure.\n");
+	Type("But don't worry,"); Type( " I'm sure you're very intellectual!\n");
 	Type("Booting Trivia Protocol"); cout << "."; Sleep(800); cout << "."; Sleep(800); cout << ".\n\n"; Sleep(800);
 	TriviaProtocol(); // Calling TriviaProtocol
 	return;
@@ -56,9 +56,9 @@ void TriviaProtocol()
 	Type("How many moons orbit around Eibos?\n");
 	cout << "1- 2\n" << "2- 3\n" << "3- Eibos has moons???\n";
 	cin >> UserChoice;
-	Type("U N B E L I E V E A B L E!"); SetConsoleTextAttribute(hConsole, 12); Type(" ERROR"); SetConsoleTextAttribute(hConsole, 15); Type(", has gotten ALL THREE QUESTIONS CORRECT\n");
+	Type("U N B E L I E V E A B L E!"); Type(" I N C R E D I B L E!"); Type(" S P E C T A C U L A R!"); SetConsoleTextAttribute(hConsole, 12); Type(" ERROR"); SetConsoleTextAttribute(hConsole, 15); Type(", has gotten ALL THREE QUESTIONS CORRECT!\n");
 	Type("This has been a WONDERFUL show everybody. I'm your host,"); SetConsoleTextAttribute(hConsole, 14); Type(" Jerry!"); SetConsoleTextAttribute(hConsole, 15); Type(" and this is me signing off!\n");
-	Type("Ending Trivia Protocol"); cout << "."; Sleep(800); cout << "."; Sleep(800); cout << ".\n"; Sleep(800);
+	Type("Ending Trivia Protocol"); cout << "."; Sleep(800); cout << "."; Sleep(800); cout << ".\n\n"; Sleep(800);
 	return;
 }
 
@@ -68,7 +68,7 @@ void ShowLocation(string* hex)
 	Type("Congratulations explorer. "); Type("You managed to pass the Trivia that blocked you from accessing the location of John's treasure.\n");
 	Type("We will uphold our word and reveal the location of the treasure for you.\n");
 	Type("John's famous treasure is located in sector "); cout << hex << endl;
-	Type("Beware of the Booby Traps!");
+	Type("Beware of the Booby Traps!\n");
 	return;
 }
 
